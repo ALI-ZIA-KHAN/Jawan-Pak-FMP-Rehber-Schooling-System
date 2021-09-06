@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Lobster&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Lobster', cursive;
+}
+
+
+
+
+
+
+.top_most{
+    width: 100vw !important;
+    height: 30px ;
+    min-width: 250px;
+    background: rgb(1, 197, 106);
+
+  
+  
+}
+.logo{
+    height:30px;
+    width:150px;
+}
+.nav_button{
+    color: rgb(255, 255, 255) !important;
+    background: linear-gradient(rgb(25, 128, 212),rgb(51, 165, 211));
+    border-radius: 5% !important;
+}
+
+.toggle_button{
+   
+    background-color: rgb(25, 190, 212) !important;
+    
+}
+.toggle_icon{
+    width:20px !important;
+    color: white  !important;
+}
+.nav_div{
+
+    min-width: 250px !important;
+    
+}
+
+.nav_ul{
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* .nav_lis a{
+    color: rgb(73, 148, 184) !important;
+} */
+
+.home{
+   color:orange !important;  
+  }
+.services{  
+    color:rgb(255, 0, 106) !important;  
+  }
+.about{
+      color:rgb(32, 84, 179) !important;  
+  }
+.contact{
+    color: green !important;
+}
+
+
+
+
+
+
+
+
+.main{
+    min-height:30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: #ffffff;
+   
+
+}
+.loading{
+    position: relative;
+    -webkit-box-reflect: below -28px linear-gradient
+    (transpatent,rgb(248, 242, 242));
+}
+.loading::before{
+
+
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: #03e9f4;
+    animation: blinkCursor 0.8s steps(3) infinite;
+}
+@keyframes blinkCursor{
+    0%,75%{
+        opacity: 1;
+    }
+    76%,100%{
+        opacity: 0%;
+
+    }
+
+}
+.loading h2{
+    
+    position:relative;
+    color:#3276db;
+     letter-spacing: 5px;
+     font-size: 4em;
+     text-transform: uppercase;
+     animation:typing 8s steps(11) infinite;
+     overflow: hidden;
+}
+@keyframes typing{
+    0%,90%,100%{
+        width:0;
+    }
+    30%,60%{
+        width:401.88px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+.star{
+    height:290px;
+    width:370px;
+}
+
+
+
+
+
+
+.shining{
+    border-radius: 50%;
+    width: 100%;
+    transition: transform 1%;
+}
+
+.shining:hover{
+    transform: translateZ(20px);
+}
+
+.layswavy{
+    position: relative;
+    width: 100% !important;
+    height: 100px  !important;
+ 
+    overflow: hidden  !important;
+}
+
+
+
+.layswavy::before{
+    content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+    position: absolute;
+    top:-42px;
+    left:0;
+    font-size: 6em;
+    color:transparent;
+    
+    text-decoration-style:dashed;
+    text-decoration-color: rgb(255, 121, 12);
+    text-decoration-line: underline;
+    animation: animate 5s linear infinite;
+
+}
+
+@keyframes animate{
+
+  0%{
+      transform: translateX(-5px);
+  }
+  100%{
+    transform: translateX(-60px);
+}
+
+  
+
+}
+
+
+
+
+
+.mission_head{
+    background: linear-gradient(
+        to right, #f32170, #ff6b08,
+         #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 1.7em;
+}
+.para_in{
+    color:rgb(73, 148, 184) !important;
+  
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container_two{
+    width:100vw;
+}
+
+.our_mission{
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+
+
+
+.car_image{
+    width:100% !important;
+    height:450px;
+}
+
+
+.team{
+    background: linear-gradient(
+        to left, #99c7ff,
+     rgba(83,215,138,1) , rgb(103, 208, 230), 
+     rgba(80,255,192,1));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 1.7em;
+}
+
+
+
+
+
+
+.renewr{
+    height: 300px;
+    margin:auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+
+
+.renew-track{
+    display:flex;
+    width:calc(250px*18);
+    animation: scroll 120s linear infinite;
+}
+
+.renew-track:hover{
+    animation-play-state: paused;
+}
+
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*9));
+    }
+}
+
+
+.renew{
+    height: 250px;
+    width:250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+
+}
+.splashing{
+    width: 100%;
+    transition: transform 1%;
+}
+
+.splashing:hover{
+    transform: translateZ(20px);
+}
+
+
+.renewr::before,
+.renewr::after{
+    background: linear-gradient(to right,rgba(255,255,255,1)0%,
+    rgba(255,255,255,0)100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width:15%;
+    z-index: 2;
+    
+    
+}
+
+.renewr::before{
+    left: 0;
+    top:0;    
+    
+}
+.renewr::after{
+    right: 0;
+    top:0;    
+    
+}
+
+
+.five_boxes{
+       
+    background-color:linear-gradient(rgb(255, 254, 196),rgb(255, 194, 227)) !important;
+    margin-top: 2%   !important;
+    padding:5% !important;
+    
+   
+}
+.list_items{
+    color: rgb(255, 7, 102);
+    font-weight: bolder !important;
+
+
+}
+.listing a{
+    margin-top: 2px !important;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 104, 17);
+    font-weight: bolder;
+}
+.listing h6{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 21, 157);
+    font-size: 28px;
+    font-weight: bolder;
+}
+.followus{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 38px;
+    width: 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+ 
